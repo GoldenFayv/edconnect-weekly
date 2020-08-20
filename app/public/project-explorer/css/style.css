@@ -1,0 +1,507 @@
+*{
+    box-sizing: border-box;
+    /* margin: 0;  */
+    padding: 0;
+    /* background-color: #24252A; */
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #24252A;
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    height: 80px;
+}
+header h1 a{
+    /* background-color: tan; */
+    padding: auto 10px;
+    border-radius: 5px;
+}
+
+.item1{
+    display: inline-block;
+    padding: 2px 14px;
+    font-size: larger;
+    border-radius: 5px;
+}
+.item1:hover{
+    background-color: tan;
+}
+
+#search-bar{
+    height: 50px;
+    width: 250px;
+    background-color: gainsboro;
+    color: teal;
+    border: 2px;
+    border-radius: 6px;
+    margin: auto;
+    font-size: 15px;
+    padding-left: 15px;
+    color: white;
+}
+#search-bar:focus{
+    background-color: tan;
+    font-size: 20px;
+}
+#submit1{
+    height: 50px;
+    width: 100px;
+    font-size: 18px;
+    background-color: tan;
+    color: teal;
+    border-radius: 6px;
+}
+header a{
+    text-decoration: none;
+    color: teal;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.section1{
+    max-width: 1000px;
+    background-color: gainsboro;
+    margin: 20px auto 0;
+    padding: 20px 50px;
+    border-radius: 8px;
+}
+.section-one{
+    padding: 30px 0;
+    /* background-color: blueviolet; */
+}
+.get, .login1{
+    padding: 9px;
+    border-radius: 5px;
+}
+.get{
+    background-color: tan;
+}
+.login1{
+    background-color:gray; 
+}
+
+
+
+
+
+.section2{
+    max-width: 1100px;
+    /* max-height: 3450px; */
+    /* background-color: gainsboro; */
+    margin: 20px auto 0;
+    padding: 20px 50px;
+    border-radius: 20px;
+    display: flex;
+    
+}
+.section2 div{
+    flex: 1;
+    border: 2px groove white;
+    padding: 9px;
+    margin-right: 40px;
+}
+div ul li{
+    list-style: none;
+}
+.section2 div:nth-last-child(1){background-color: #c0dbe2;}
+.section2 div:nth-last-child(2){background-color: #cdf1c3;}
+.section2 div:nth-last-child(3){background-color: #ccb9da;}
+.section2 div:last-child{margin-right: 0;}
+
+
+
+
+/* ******************************************** Login ********************************* */
+
+.container{
+
+    max-width: 500px;
+    margin: 100px auto 0 auto;
+    /* background-color: #fff; */
+
+    
+    
+}
+.container form h2, .form-row label{
+    color: white;
+}
+
+.form-row, .container h2, .container #submit2{
+    margin: 30px 10px 5px 10px;
+
+}
+.form-row label{
+    padding-right: 10px;
+}
+.form-row input{
+    height: 35px;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 20px;
+}
+#submit2{
+    border: none;
+    border-radius: 5px;
+    padding: 14px;
+    font-size: large;
+    background-color: tan;
+
+}
+
+
+
+
+
+
+
+
+/* ******************************************** SIGN UP ********************************* */
+.container2{
+    max-width: 1100px;
+    margin: 100px auto;
+}
+.iphone{
+    padding: 20px;
+    color: white;
+}
+.form-row2{
+    
+    /* background-color: #fff; */
+    display: flex;
+    
+}
+.form-row2 div{
+    flex: 1;
+    padding: 20px;
+}
+.form-row2 div input, .form-row2 div select{
+    width: 400px;
+    height: 35px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+#submit3{
+    width: auto;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: large;
+    background-color: tan;
+}
+
+.form-row2 div label{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ******************************************** profile ********************************* */
+
+.section-three{
+    max-width: 85%;
+    /* background-color:red; */
+    margin: 20px auto;
+}
+.section-three ul{
+    max-width: 85%;
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+    color: black;
+    margin: 20px auto;
+}
+.section-three ul li{
+    margin: 15px auto;
+    list-style: none;
+}
+.form-three{
+    max-width: 85%;
+    margin: 20px auto;
+    display: flex;
+    /* background-color: violet; */
+}
+.form-three div{
+    flex: 1;
+    padding: 60px;
+}
+.form-three div input, .form-three div select{
+    width: 400px;
+    height: 35px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+}
+#update{
+        width: auto;
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: large;
+        background-color: tan;
+}
+
+
+
+
+.form-four{
+    max-width: 85%;
+    margin: 10px auto;
+    display: flex;
+    /* background-color: violet; */
+}
+.form-four div{
+    flex: 1;
+    padding: 50px;
+}
+.form-four div input{
+    width: 400px;
+    height: 35px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px; 
+}
+#change-pass{
+    width: 70px;
+    border: none;
+    text-align: left;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: large;
+    background-color: tan;
+}
+.section-three div{
+    max-width: 85%;
+    margin: 20px auto;
+}
+
+.form-four div .input{
+    width: 250px;
+}
+
+
+
+
+
+
+
+
+
+/* ******************************************** search profile ********************************* */
+
+.form-five{
+    max-width: 65%;
+    margin: 20px auto;
+    color: white;
+}
+.form-five div{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.form-five div input{
+    width: 400px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px; 
+}
+.form-five div input, .form-five div div{
+    margin: 4px;
+}
+.form-five div label{
+    background-color: gray;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 7px;
+}
+.form-five div select{
+    width: 90px;
+    padding: 10px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.pg{
+    max-width: 50%;
+    margin: 20px auto;
+    font-size: larger;
+}
+
+
+
+
+
+
+
+
+/* ******************************************** create profile ********************************* */
+.form-6{
+    /* background: red; */
+    max-width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.form-6 input{
+    width: 400px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+#sub{
+    width: auto;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: large;
+    background-color: tan;
+}
+ .form-6 h2{
+    padding: 7px 0 15px 0;
+}
+
+
+
+
+
+
+
+
+/* ******************************************** Edit profile ********************************* */
+
+
+
+
+
+.section-four{
+    max-width: 85%;
+    /* background-color:red; */
+    margin: 20px auto;
+}
+.section-four ul{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+    color: black;
+    margin: 20px auto;
+}
+.section-four ul li{
+    margin: 15px auto;
+    list-style: none;
+}
+
+.edit a{
+    text-decoration: none;
+    padding: 5px;
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+
+
+
+.form-seven{
+    max-width: 85%;
+    margin: 20px auto;
+    display: flex;
+    /* background-color: violet; */
+    justify-content: center;
+}
+.form-seven div{
+    padding: 60px;
+}
+.form-seven div input{
+    width: 400px;
+    height: 35px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+}
+.form-seven div textarea{
+    border: none;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+}
+#save{
+    width: auto;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: large;
+    background-color: tan;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ******************************************** View Profile ********************************* */
+
+
+.section-five{
+    max-width: 85%;
+    /* background-color:red; */
+    margin: 20px auto;
+}
+.section-five ul{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+    color: black;
+    margin: 20px auto;
+}
+
+.section-five ul li{
+    margin: 15px auto;
+    list-style: none;
+}
+.view1 a{
+    text-decoration: none;
+    padding: 5px;
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+
+.lorem{
+    padding: 20px;
+}

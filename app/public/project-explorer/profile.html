@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="#">PROJECT EXPLORER</a></h1>
+        <form action="">
+            <input type="search" placeholder="Search Projects" id="search-bar">
+            <input type="submit" value="Search" id="submit1">
+        </form>
+        <ul class="menu">
+            <li class="item1"><a href="#">Home</a></li>
+            <li class="item1"><a href="#">Project</a></li>
+            <li class="item1"><a href="#">Contact</a></li>
+            <li class="item1"><a href="#">About</a></li>
+        </ul>
+        <ul class="menu">
+            <li class="item1"><a href="#">Signed in as: Golden favour</a></li>
+            <li class="item1"><a href="#">Logout</a></li>
+        </ul>
+    </header> 
+
+
+    <section class="section-three">
+        <div>
+            <strong>Golden Favour</strong>
+            <em>favour.e2002@gmail.com</em><br><br>
+            <hr>
+        </div>
+        
+    <ul>
+        <li>Program<br>Software Engineering</li>
+        <li>Matriculation<br>19/0355</li>
+        <li>Graduation Year<br>2023</li>
+    </ul>
+    <div>
+        <h3>Update Profile</h3><br>
+        <hr>
+    </div>
+    
+    <form class="form-three"> 
+        <div>
+            <label for="fname">First Name:</label><br><br>
+            <input type="text" required placeholder="First name"><br><br>
+            <label for="email">Email address:</label><br><br>
+            <input type="email" required placeholder=" Your email address"><br><br>
+            <label>Graduation Year:</label><br><br>
+         <select name="Graduation">
+            <option value="" selected>Choose...</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+        </select><br><br>   
+        <input type="submit" value="Update" id="update"><br><br>
+        </div>
+        <div>
+            <label for="lname">Last Name:</label><br><br>
+            <input type="text" required placeholder="Last name"><br><br>
+            <label for="matric">Matric Number:</label><br><br>
+            <input type="text" required placeholder="Matric/Student ID Number"><br><br>
+            <label for="program">Program:</label><br><br>
+        <select name="program">
+            <option value="" selected>Choose...</option>
+            <option value="">Software Engineering</option>
+            <option value="">Computer Science</option>
+            <option value="">Computer Technology</option>
+            <option value="">Information Technology</option>
+        </select><br><br>
+        
+        </div>
+    </form>
+    <div>
+        <h3>Change Password</h3><br>
+        <hr>
+    </div>
+    <form class="form-four">
+        <div>
+            <label for="current_password">Current Password</label><br><br>
+            <input type="password" class="input" placeholder="Current Password"><br><br>
+            <input type="submit" value="Submit" id="change-pass">
+        </div>
+        <div>
+            <label for="npassword">New Password</label><br><br>
+            <input type="password" class="input" placeholder="New Password"><br><br>
+        </div>
+        <div>
+            <label for="cpassword">Confirm Password</label><br><br>
+            <input type="password" class="input" placeholder="Confirm Password"><br><br>
+        </div>   
+    </form>
+    </section>
+
+</body>
+</html>
