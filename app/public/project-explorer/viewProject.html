@@ -3,47 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <title>View Project</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .menu{
+            list-style: none;
+            display: flex;
+        }
+        .view ul{
+            list-style: none;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1><a href="#">PROJECT EXPLORER</a></h1>
-        <form action="">
-            <input type="search" placeholder="Search Projects" id="search-bar">
-            <input type="submit" value="Search" id="submit1">
-        </form>
-        <ul class="menu">
-            <li class="item1"><a href="index.html">Home</a></li>
-            <li class="item1"><a href="#">Project</a></li>
-            <li class="item1"><a href="#">Contact</a></li>
-            <li class="item1"><a href="#">About</a></li>
-        </ul>
-        <ul class="menu">
-            <li class="item1"><a href="#">Signed in as: Golden favour</a></li>
-            <li class="item1"><a href="#">Logout</a></li>
-        </ul>
-    </header>
-
-    <section class="section-five">
-        <h3>Project 4</h3><br><hr>
-        <ul>
-            <li>Created By<br>Golden Favour</li>
-            <li>Date Created<br>13/08/2020</li>
-            <li>Last Updated<br>13/08/2020</li>
-            <li class="view1"><a href="editProject.html">Edit Project</a></li>
-        </ul>
-        <div class="lorem">
-            <h3>Project Abstract</h3><br><hr><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Similique asperiores iure aliquid magnam debitis tenetur adipisci saepe aut,<br> nobis at ullam odit ea voluptate excepturi corporis incidunt id suscipit necessitatibus.</p>
+    <header class="container-fluid my-fluid1 bg-dark">
+        <div class="row my-row1 justify-content-around">
+            <div class="col-lg-2 col-md-4 mt-4 ">
+                <h5 class="text-success"><a href="#">PROJECT EXPLORER</a></h5>
+            </div>
+            <div class="col-lg-3 col-md-4  mt-3">
+                <form class=" justify-content-around">
+                    <div class="row">
+                        <div class="col form-inline">
+                            <input type="search" placeholder="Search Projects" class="form-control" name="prp">
+                        </div>
+                        <div class="col form-inline ml-5">
+                            <input type="submit" value="Search" class="btn btn-outline-primary">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-md-3 mt-4">
+                <ul class="menu justify-content-around">
+                    <li class="item1"><a href="index.html">Home</a></li>
+                    <li class="item1"><a href="#">Project</a></li>
+                    <li class="item1"><a href="#">Contact</a></li>
+                    <li class="item1"><a href="#">About</a></li>
+                </ul>
+            </div>
             
+            <div class="col-lg-3 col-md-1 mt-4">
+                <ul class="menu justify-content-around">
+                    <li class="item1"><a href="register.html">Signed in as Golden Favour</a></li>
+                    <li class="item1"><a href="login.html">Logout</a></li>
+                </ul>
+            </div>
         </div>
-        <h3>Project Details</h3><br><hr>
-        <ul>
-            <li>Author<br>Favour Golden</li>
-            <li>Tags<br>#soft, #gold</li>
-            <li><strong>Project Files</strong><br>No file Uploaded yet
-            </li>
-        </ul> 
-    </section>
+    </header><br>
+
+    <section class="container view">
+        <h3>Project 4</h3><hr>
+        <ul class="row bg-light p-3">
+            <li class="col">Created By<br>Golden Favour</li>
+            <li class="col">Date Created<br>13/08/2020</li>
+            <li class="col">Last Updated<br>13/08/2020</li>
+            <li class="col "><a href="editProject.html" class="btn btn-primary">Edit Project</a></li>
+        </ul>
+        <div class="row">
+            <div class="col">
+                <h3>Project Abstract</h3><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo blanditiis nam excepturi tempora odio mollitia ducimus natus atque maxime, quia, quasi dolorum voluptatem veritatis est asperiores repudiandae voluptates inventore unde.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vitae dignissimos illo quasi nam corrupti nulla provident! Asperiores placeat quasi illo. Enim magnam nostrum aperiam molestias inventore, laborum ex provident!
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis libero hic laudantium ut illum cum autem quidem animi tempora mollitia, assumenda adipisci illo. Recusandae quibusdam ipsa deserunt assumenda expedita nostrum.
+                </p>
+            </div>
+            <div class="col">
+                <h3>Project Details</h3><hr>
+                <div class="card card-header">Author</div>
+                <ul class="list-group">
+                    <li class="list-group-item">Favour Golden</li>
+                    <li class="list-group-item">Eke Ike</li>
+                    <li class="card card-header">#soft, #gold</li>
+                </ul><br>
+                <div class="card card-header">
+                    Project Files
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item" align="center">No File Uploaded yet</li>
+                </ul>
+            </div>
+    </section><br><br>
+
+    <div class="container bg-light">
+        <div class="row p-2">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4 text-muted" align="right">Project Explorer &copy;2020 Registered Info</div>
+        </div>
+    </div><br><br>
 </body>
 </html>

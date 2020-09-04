@@ -3,68 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <title>Home page</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .menu{
+            list-style: none;
+            display: flex;
+            
+        }
+        .my-container1{
+            max-width: 1180px;
+        }
+        .my-container2{
+            max-width: 1140px;
+        }
+    </style>
+
+
 </head>
 <body>
-    <header>
-        <h1><a href="#">PROJECT EXPLORER</a></h1>
-        <form action="">
-            <input type="search" placeholder="Search Projects" id="search-bar">
-            <input type="submit" value="Search" id="submit1">
-        </form>
-        <ul class="menu">
-            <li class="item1"><a href="index.html">Home</a></li>
-            <li class="item1"><a href="#">Project</a></li>
-            <li class="item1"><a href="#">Contact</a></li>
-            <li class="item1"><a href="#">About</a></li>
-        </ul>
-        <ul class="menu">
-            <li class="item1"><a href="register.html">Sign Up</a></li>
-            <li class="item1"><a href="login.html">Login</a></li>
-        </ul>
+    <header class="container-fluid my-fluid1 bg-dark">
+        <div class="row my-row1 justify-content-around text-white">
+            <div class="col-lg-2 col-md-4 mt-4">
+                <h5><a href="#">PROJECT EXPLORER</a></h5>
+            </div>
+            <div class="col-lg-3 col-md-4  mt-3">
+                <form class=" justify-content-around">
+                    <div class="row">
+                        <div class="col form-inline">
+                            <input type="search" placeholder="Search Projects" class="form-control" name="prp">
+                        </div>
+                        <div class="col form-inline ml-5">
+                            <input type="submit" value="Search" class="btn btn-outline-primary">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-md-3 mt-4">
+                <ul class="menu justify-content-around">
+                    <li class="item1"><a href="index.html">Home</a></li>
+                    <li class="item1"><a href="#">Project</a></li>
+                    <li class="item1"><a href="#">Contact</a></li>
+                    <li class="item1"><a href="#">About</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-3 col-md-1 mt-4">
+                <ul class="menu justify-content-around">
+                    <li class="item1"><a href="register.html">Signed in as Golden Favour</a></li>
+                    <li class="item1"><a href="login.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
-    <section class="section1">
-        <div class="section-one">
+    <section class="container my-container1 mt-5">
+        <div class="jumbotron">
             <h3>Welcome To Project Explorer</h3>
             <p>Project Explorer is a repository for final year projects across all departments at your institution.
                 You can upload and search projects and learn from others.
             </p>
-            <a class="get" href="#">Get Started</a>
-            <a class="login1" href="login.html">Login</a>
+            <a href="#" class="btn btn-primary">Get Started</a>
+            <a href="login.html" class="btn btn-secondary">Login</a>
         </div>
     </section>
-    <section class="section2">
-        <!-- <h3>Project List</h3> -->
-        <div>
-            <h4>Project 1</h4>
-            <ul>
-                <li>Name: Project 1</li>
-                <li>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officiis ipsum odio dolori.</li>
-                <li>Program: Software Engineering</li>
-                <li>Year: 2015</li>
-            </ul><br><br>
-        </div>
-        <div>
-            <h4>Project 2</h4>
-        <ul>
-                <li>Name: Project 2</li>
-                <li>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officiis ipsum odio dolori.</li>
-                <li>Program: Computer Engineering</li>
-                <li>Year: 2018</li>
-            </ul><br><br>
-        </div>
-        
-        <div>
-            <h4>Project 3</h4>
-            <ul>
-                <li>Name: Project 3</li>
-                <li>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officiis ipsum odio dolori.</li>
-                <li>Program: Computer Information System</li>
-                <li>Year: 2020</li>
-            </ul>   
-        </div>
-    </section>
+    <section class="container my-container2">
+        <div class="row my-row2 justify-content-between">
+            <div class="col-lg-2 border border">
+                <h4 class="text-primary">Project 1</h4>
+                <p class="text-muted">Golden Brown, Favour Eke</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, nihil pariatur officiis illum ex, velit perferendis laboriosam cor</p>
+                <p class="text-primary">#soft, #gold</p>
+            </div>
+            <div class="col-lg-2 border border">
+                <h4 class="text-primary">Project 1</h4>
+                <p class="text-muted">Golden Brown, Favour Eke</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, nihil pariatur officiis illum ex, velit perferendis laboriosam cor</p>
+                <p class="text-primary">#soft, #gold</p>
+            </div>
+            <div class="col-lg-2 border border">
+                <h4 class="text-primary">Project 1</h4>
+                <p class="text-muted">Golden Brown, Favour Eke</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, nihil pariatur officiis illum ex, velit perferendis laboriosam cor</p>
+                <p class="text-primary">#soft, #gold</p>
+            </div>
+            <div class="col-lg-2 border border">
+                <h4 class="text-primary">Project 1</h4>
+                <p class="text-muted">Golden Brown, Favour Eke</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, nihil pariatur officiis illum ex, velit perferendis laboriosam cor</p>
+                <p class="text-primary">#soft, #gold</p>
+            </div>
 
+            
+        </div>
+    </section><br><br>
+    <div class="container bg-light">
+        <div class="row p-2">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4 text-muted" align="right">Project Explorer &copy;2020 Registered Info</div>
+        </div>
+    </div><br><br>
 </body>
 </html>
 

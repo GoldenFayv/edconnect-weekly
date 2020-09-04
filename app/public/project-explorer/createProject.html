@@ -3,42 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <title>Create Project</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .menu{
+                list-style: none;
+                display: flex;
+        }
+        .create{
+            max-width: 600px;
+        }
+    </style>
+
 </head>
 <body>
-    <header>
-        <h1><a href="#">PROJECT EXPLORER</a></h1>
-        <form action="">
-            <input type="search" placeholder="Search Projects" id="search-bar">
-            <input type="submit" value="Search" id="submit1">
+    <header class="container-fluid my-fluid1 bg-dark">
+        <div class="row my-row1 justify-content-around text-white">
+            <div class="col-lg-2 col-md-4 mt-4">
+                <h5><a href="#">PROJECT EXPLORER</a></h5>
+            </div>
+            <div class="col-lg-3 col-md-4  mt-3">
+                <form class=" justify-content-around">
+                    <div class="row">
+                        <div class="col form-inline">
+                            <input type="search" placeholder="Search Projects" class="form-control" name="prp">
+                        </div>
+                        <div class="col form-inline ml-5">
+                            <input type="submit" value="Search" class="btn btn-outline-primary">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-md-3 mt-4">
+                <ul class="menu justify-content-around">
+                    <li class="item1"><a href="index.html">Home</a></li>
+                    <li class="item1"><a href="#">Project</a></li>
+                    <li class="item1"><a href="#">Contact</a></li>
+                    <li class="item1"><a href="#">About</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-3 col-md-1 mt-4">
+                <ul class="menu justify-content-around">
+                    <li class="item1"><a href="register.html">Signed in as Golden Favour</a></li>
+                    <li class="item1"><a href="login.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header><br><br>
+
+    <div class="container create">
+        <form class="">
+            <h2>Submit Project</h2>
+            <label for="pn">Project Name:</label><br>
+            <input type="text" class="form-control" placeholder="Enter Project name"><br>
+            <label for="Pa">Project Abstract:</label><br>
+            <textarea class="form-control" cols="60" rows="10"></textarea><br>
+            <label for="author">Author(s)</label><br>
+            <input type="text" class="form-control" placeholder="Enter Author names (Separated by coma)"><br>
+            <label for="tag">Tag(s)</label><br>
+            <input type="text" class="form-control" placeholder="Use # to tag project with differentopics(e.g #js #c++ etc)"><br>
+            <input type="submit" name="submit" value="Continue" class="btn btn-primary">    
         </form>
-        <ul class="menu">
-            <li class="item1"><a href="index.html">Home</a></li>
-            <li class="item1"><a href="#">Project</a></li>
-            <li class="item1"><a href="#">Contact</a></li>
-            <li class="item1"><a href="#">About</a></li>
-        </ul>
-        <ul class="menu">
-            <li class="item1"><a href="#">Signed in as: Golden favour</a></li>
-            <li class="item1"><a href="#">Logout</a></li>
-        </ul>
-    </header>
+    </div><br><br>
 
-    
-    <form class="form-6">
-        <h2>Submit Project</h2>
-        <label for="pn">Project Name:</label><br>
-        <input type="text" placeholder="Enter Project name"><br><br>
-        <label for="Pa">Project Abstract:</label><br>
-        <textarea name="" cols="60" rows="10"></textarea><br><br>
-        <label for="author">Author(s)</label><br>
-        <input type="text" placeholder="Enter Author names (Separated by coma)"><br><br>
-        <label for="tag">Tag(s)</label><br>
-        <input type="text" placeholder="Use # to tag project with differentopics(e.g #js #c++ etc)"><br><br>
-        <input type="submit" name="submit" id="sub">
-
-
-    </form>
-
+    <div class="container bg-light">
+        <div class="row p-2">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4 text-muted" align="right">Project Explorer &copy;2020 Registered Info</div>
+        </div>
+    </div><br><br>
 </body>
 </html>

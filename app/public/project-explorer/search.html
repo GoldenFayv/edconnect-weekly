@@ -3,38 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <title>Search</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .menu{
+                list-style: none;
+                display: flex;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1><a href="#">PROJECT EXPLORER</a></h1>
-        <form action="">
-            <input type="search" placeholder="Search Projects" id="search-bar">
-            <input type="submit" value="Search" id="submit1">
-        </form>
-        <ul class="menu">
-            <li class="item1"><a href="index.html">Home</a></li>
-            <li class="item1"><a href="#">Project</a></li>
-            <li class="item1"><a href="#">Contact</a></li>
-            <li class="item1"><a href="#">About</a></li>
-        </ul>
-        <ul class="menu">
-            <li class="item1"><a href="#">Signed in as: Golden favour</a></li>
-            <li class="item1"><a href="#">Logout</a></li>
-        </ul>
-    </header>
-
-    <h4 class="pg">Project Gallery</h4>
-    <form class="form-five">
-        <div>
-            <input type="text" placeholder="Search project name, authours, abstract, tags">
-            <label for="pa" class="">Search by</label>
-            <select name="" class="form-five-select">
-                <option>Name</option>
-                <option>abstract</option>
-                <option>Author</option>
-                <option>Tags</option>
-            </select>
+    <header class="container-fluid my-fluid1 bg-dark">
+        <div class="row my-row1 justify-content-around text-white">
+            <div class="col-lg-2 col-md-4 mt-4">
+                <h5><a href="#">PROJECT EXPLORER</a></h5>
+            </div>
+            <div class="col-lg-3 col-md-4  mt-3">
+                <form class=" justify-content-around">
+                    <div class="row">
+                        <div class="col form-inline">
+                            <input type="search" placeholder="Search Projects" class="form-control" name="prp">
+                        </div>
+                        <div class="col form-inline ml-5">
+                            <input type="submit" value="Search" class="btn btn-outline-primary">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-md-3 mt-4">
+                <ul class="menu justify-content-around">
+                    <li class="item1"><a href="index.html">Home</a></li>
+                    <li class="item1"><a href="#">Project</a></li>
+                    <li class="item1"><a href="#">Contact</a></li>
+                    <li class="item1"><a href="#">About</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-3 col-md-1 mt-4">
+                <ul class="menu justify-content-around">
+                    <li class="item1"><a href="register.html">Signed in as Golden Favour</a></li>
+                    <li class="item1"><a href="login.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header><br>
+    <div class="container">
+        <h4 class="pg">Project Gallery</h4>
+            <form class="form-five">
+        <div class="row bg-light p-3">
+            <div class="col-lg-7">
+                <input type="text" class="form-control form-control-lg" placeholder="Search project name, authours, abstract, tags">
+            </div>
+            <div class="col-lg-5">
+                <label for="pa" class="">Search by</label>
+                <select name="" class="form-control-lg">
+                    <option>Name</option>
+                    <option>abstract</option>
+                    <option>Author</option>
+                    <option>Tags</option>
+                </select>
+                <button type="submit" class="btn btn-lg btn-primary md-3">Submit</button>
+            </div>
+            
         </div>
         <!-- <div>
             <label for="pa" class="">Search by</label>
@@ -45,47 +75,47 @@
                 <option>Tags</option>
             </select>
         </div> -->
-    </form><br>
-    <h4 class="pg">All Projects <em style="color: grey;">(3 results)</em></h4>
-    <section class="section2">
-        <!-- <h3>Project List</h3> -->
-        <div>
-            <h4>Project 1</h4>
-            <ul>
-                <li>Name: Project 1</li>
-                <li>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officiis ipsum odio dolori.</li>
-                <li>Program: Software Engineering</li>
-                <li>Year: 2015</li>
-            </ul><br><br>
+        </form><br>
+    </div>
+    
+    <section class="container my-container2">
+        <h4 class="pg">All Projects <em style="color: grey;">(3 results)</em></h4><br>
+        <div class="row my-row2 justify-content-between">
+            <div class="col-lg-2 border border">
+                <h4 class="text-primary">Project 1</h4>
+                <p class="text-muted">Golden Brown, Favour Eke</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, nihil pariatur officiis illum ex, velit perferendis laboriosam cor</p>
+                <p class="text-primary">#soft, #gold</p>
+            </div>
+            <div class="col-lg-2 border border">
+                <h4 class="text-primary">Project 1</h4>
+                <p class="text-muted">Golden Brown, Favour Eke</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, nihil pariatur officiis illum ex, velit perferendis laboriosam cor</p>
+                <p class="text-primary">#soft, #gold</p>
+            </div>
+            <div class="col-lg-2 border border">
+                <h4 class="text-primary">Project 1</h4>
+                <p class="text-muted">Golden Brown, Favour Eke</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, nihil pariatur officiis illum ex, velit perferendis laboriosam cor</p>
+                <p class="text-primary">#soft, #gold</p>
+            </div>
+            <div class="col-lg-2 border border">
+                <h4 class="text-primary">Project 1</h4>
+                <p class="text-muted">Golden Brown, Favour Eke</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, nihil pariatur officiis illum ex, velit perferendis laboriosam cor</p>
+                <p class="text-primary">#soft, #gold</p>
+            </div>
+
+            
         </div>
-        <div>
-            <h4>Project 2</h4>
-        <ul>
-                <li>Name: Project 2</li>
-                <li>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officiis ipsum odio dolori.</li>
-                <li>Program: Computer Engineering</li>
-                <li>Year: 2018</li>
-            </ul><br><br>
+    </section><br><br>
+
+    <div class="container bg-light">
+        <div class="row p-2">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4 text-muted" align="right">Project Explorer &copy;2020 Registered Info</div>
         </div>
-        
-        <div>
-            <h4>Project 3</h4>
-            <ul>
-                <li>Name: Project 3</li>
-                <li>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officiis ipsum odio dolori.</li>
-                <li>Program: Computer Information System</li>
-                <li>Year: 2020</li>
-            </ul>   
-        </div>
-    </section>
-    <!-- <h4>Search Result</h4>
-    <h5>Project 4</h5>
-    <ul>
-        <li>Name: Project 4</li>
-        <li>Description: Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-        <li>Program: Software Engineering</li>
-        <li>Author: Favour Golden</li>
-        <li>Tags: #soft, #gold</li>
-    </ul> -->
+    </div><br><br>
 </body>
 </html>
